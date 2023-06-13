@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 600;
+}
+
+.parent, .child {
+    height: 200px;
+    width: 200px;
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+}
+
+.parent {
+    background-color: #6f7f8f;
+    color: #fff;
+    border: 2px dashed #000;
+}
+
+.child {
+    background-color: #e4e3e1;
+    border: 2px dashed #000;
+    color: #000;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+}
+
+.absolute_positioning, .relative_positioning, .fixed_positioning, .sticky_positioning, .zindexing {
+    width: 100vw;
+    margin: 40px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 1rem 8rem;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.navigation > p:hover {
+    cursor: pointer;
+    color: greenyellow;
+}
+
+.sticky_positioning > header {
+    margin-bottom: 40px;
+}
+
+.sticky_positioning > p {
+    width: 70%;
+    margin: 20px 0px 40px 0px;
+}
+
+.zindexing > .parent-root > div {
+    height: 200px;
+    width: 200px;
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+    border: 2px dashed #000;
+}
+
+.child-one {
+    background-color: #e4e3e1;
+}
+
+.child-two {
+    background-color: #6f7f8f;
+    color: #fff;
+}
+
+.child-three {
+    background-color: #1f2937;
+    color: #fff;
+}
+
+/* absolute positioning of child with respect to document */
+.absolute_positioning .child {
+    position: absolute;
+    /* top: 0px; */
+    /* left: 0px; */
+    /* bottom: 0px; */
+    /* right: 0px; */
+
+    /* top: 60px; */
+    /* left: 60px; */
+}
+
+/* absolute positioning of child with respect to parent */
+.absolute_positioning .parent {
+    /* position: relative; */
+}
+
+/* relative positioning of child */
+.relative_positioning .parent {
+    position: relative;
+    /* top: 60px; */
+    /* left: 60px; */
+    /* bottom: 60px; */
+    /* right: 60px; */
+}
+
+/* fixed positioning of child */
+.fixed_positioning header {
+    /* position: fixed; */
+    /* top: 0px; */
+    /* left: 0px; */
+    /* bottom: 0px; */
+}
+
+/* sticky positioning of child */
+.sticky_positioning header {
+    position: sticky;
+    top: 0px;
+}
+
+/* z-indexing of child */
+.zindexing > .parent-root {
+    position: relative;
+}
+
+.zindexing > .parent-root > div {
+    position: absolute;
+    /* opacity: 0.7; */
+}
+
+.zindexing .child-one {
+    z-index: 1;
+}
+
+.zindexing .child-two {
+    top: 40px;
+    left: 40px;
+
+    z-index: 2;
+}
+
+.zindexing .child-three {
+    top: 80px;
+    left: 80px;
+    
+    z-index: 3;
+}
+
+
