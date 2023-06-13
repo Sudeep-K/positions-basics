@@ -105,23 +105,6 @@ nav {
     color: #fff;
 }
 
-/* absolute positioning of child with respect to document */
-.absolute_positioning .child {
-    position: absolute;
-    /* top: 0px; */
-    /* left: 0px; */
-    /* bottom: 0px; */
-    /* right: 0px; */
-
-    /* top: 60px; */
-    /* left: 60px; */
-}
-
-/* absolute positioning of child with respect to parent */
-.absolute_positioning .parent {
-    /* position: relative; */
-}
-
 /* relative positioning of child */
 .relative_positioning .parent {
     position: relative;
@@ -137,6 +120,23 @@ nav {
     /* top: 0px; */
     /* left: 0px; */
     /* bottom: 0px; */
+}
+
+/* absolute positioning of child with respect to document */
+.absolute_positioning .child {
+    position: absolute;
+    /* top: 0px; */
+    /* left: 0px; */
+    /* bottom: 0px; */
+    /* right: 0px; */
+
+    /* top: 60px; */
+    /* left: 60px; */
+}
+
+/* absolute positioning of child with respect to parent */
+.absolute_positioning .parent {
+    /* position: relative; */
 }
 
 /* sticky positioning of child */
